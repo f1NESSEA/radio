@@ -10,11 +10,27 @@ public class Radio {
         }
     }
 
+    public void nextOne() {
+        if (currentVolume != 100) {
+            currentVolume++;
+        } else {
+            currentVolume = 0;
+        }
+    }
+
     public void prev() {
         if (currentStation != 0) {
             currentStation--;
         } else {
             currentStation = 9;
+        }
+    }
+
+    public void prevOne() {
+        if (currentVolume != 0) {
+            currentVolume--;
+        } else {
+            currentVolume = 100;
         }
     }
 
